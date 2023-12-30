@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -26,21 +28,73 @@
                 <button class="p-2 px-6 bg-slate-900 text-white rounded-full mr-40 drop-shadow-md">Log in</button>
             </div>
         </div>
-
-        <div>
-            <div class="flex flex-col md:flex-row w-[1000px] h-[650px] bg-red-400">
-                <div class="w-[700px] m-auto  bg-red-500 mt-6">
-                    <h1 class="text-6xl font-bold">Going Above and Beyond To Find Your Next Home</h1>
-                    <p>No One Has More Experience Or Expertise To Help You Than An Agent Who Is A Realtor. If you have the
-                        opportunity to
-                        suggest a real estate agent to anyone, think of me A referral from you is the highest compliment I can
-                        receive</p>
+    <!-- hero section -->
+    <div class="flex relative pt-6">
+        <!-- left section -->
+        <div class="mt-6 flex-[2]">
+            <h1 class="text-[90px] leading-[120px] font-semibold">Going Above and Beyond To Find Your Next Home
+            </h1>
+            <p class="text-2xl w-[890px] mb-6">No One Has More Experience Or Expertise To Help You Than An Agent Who Is A
+                Realtor. If you have the
+                opportunity to
+                suggest a real estate agent to anyone, think of me A referral from you is the highest compliment I
+                can
+                receive
+            </p>
+            <!-- action buttons -->
+            <div class="flex gap-4 items-center mb-6">
+                <!-- search  -->
+                <div class=" relative rounded-full">
+                    <span class="material-symbols-outlined absolute left-2 z-10 top-3">
+                        search
+                    </span>
+                    <input type="text" placeholder="Search properties"
+                        class="rounded-full px-7 py-3 z-0 pl-9 bg-slate-200 focus:outline-none">
                 </div>
-                <div class=" md:absolute md:top-0 md:right-0">
-                    <img class="w-[600px]" src="assets/side-image.png" alt="">
+                <!-- location -->
+                <div class="bg-slate-200 rounded-full py-3 px-6 relative">
+                    <span class="material-symbols-outlined absolute left-2">
+                        location_on
+                    </span>
+                    <select name="location" id="location" class="bg-transparent pl-2 focus:outline-none">
+                        <option selected="selected" class="hidden">Location</option>
+                        <option value="india">India</option>
+                        <option value="australia">Australia</option>
+                        <option value="germany">Germany</option>
+                    </select>
                 </div>
+                <!-- pricing -->
+                <div class="bg-slate-200 rounded-full py-3 px-6 relative">
+                    <span class="material-symbols-outlined absolute left-2">
+                        attach_money
+                    </span>
+                    <select name="pricing" id="pricing" class="bg-transparent focus:outline-none pl-1">
+                        <option class="hidden">Pricing</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                        <option value="300">300</option>
+                    </select>
+                </div>
+                <!-- search button -->
+                <button class="bg-slate-900 text-slate-50 px-14 py-4 rounded-full ">Search</button>
+            </div>
+            <!-- person -->
+            <div class="flex items-center">
+                <img src="assets/person.png" alt="" class="w-12">
+                <img src="assets/person.png" alt="" class="w-12">
+                <img src="assets/person.png" alt="" class="w-12">
+                <img src="assets/person.png" alt="" class="w-12">
+                <img src="assets/person.png" alt="" class="w-12 mr-6">
+                <p class="w-[430px]">The best time to buy a home is always five years ago. 500+
+                    Happy Clients in Bangladesh</p>
             </div>
         </div>
+        <!-- right section -->
+        <div class="flex-1">
+            <img class="absolute -top-16 right-0 z-0 w-[640px]" src="assets/side-image.png" alt="">
+        </div>
+    </div>
+        
 
     </div>
 </body>
