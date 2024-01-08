@@ -30,7 +30,7 @@
         </div>
         <!-- nav section -->
         <div
-          class="flex items-center text-slate-500 flex-[2] gap-14 max-[870px]:hidden"
+          class="flex items-center text-slate-500 flex-[2] gap-14 max-[870px]:hidden z-20 max-[1100px]:pr-6"
         >
           <a href="#" class="hover:text-slate-900 tracking-tighter">Home</a>
           <a href="#" class="hover:text-slate-900 tracking-tighter">About</a>
@@ -56,7 +56,7 @@
         <!-- menu for mobile device [max-w-800px] -->
         <!-- <span class="material-symbols-outlined min-[800px]:hidden relative"> -->
         <div
-          class="bg-emerald-200 relative max-[800px]:left-72 max-[700px]:left-28"
+          class="bg-emerald-200 relative max-[800px]:left-72 max-[700px]:left-28 hidden max-[900px]:block"
           id="menu"
           onclick="toggleMenu()"
         >
@@ -97,10 +97,10 @@
       </section>
 
       <!-- hero section -->
-      <div class="flex flex-wrap pl-14">
+      <div class="flex flex-wrap pl-[90px]">
         <!-- left section -->
         <div class="flex-[2] pt-32 flex flex-col min-[800px]:px-18 pr-8">
-          <h1 class="text-[80px] leading-[100px] font-semibold max-w-[800px]">
+          <h1 class="text-[80px] leading-[100px] font-semibold max-w-[750px]">
             Going Above and Beyond To Find Your Next Home
           </h1>
           <p class="text-lg max-w-[800px] mb-6">
@@ -200,9 +200,9 @@
         </div>
       </div>
       <!-- companies -->
-      <div class="flex flex-col items-center mt-12 mb-8">
-        <h3 class="text-xl mb-6">Trusted By 100+ industry leaders</h3>
-        <div class="flex gap-x-32 gap-y-12 mb-12 flex-wrap justify-center max-[700px]:gap-x-8 max-[700px]:gap-y-4">
+      <div class="flex flex-col  mt-12 mb-8">
+        <h3 class="text-xl mb-6 text-center">Trusted By 100+ industry leaders</h3>
+        <div class="flex gap-x-[150px] gap-y-8  mb-12 flex-wrap pl-[90px] max-[700px]:gap-x-8 max-[700px]:gap-y-4 ">
           <img
             src="assets/logos/spotify.jpeg"
             alt=""
@@ -237,40 +237,51 @@
       </div>
 
       <!-- projects -->
-      <section>
-        <div class="flex justify-between px-20 mb-6 max-[700px]:px-4">
+      <section class="flex flex-col gap-10 px-20">
+        <div class="flex justify-between max-[700px]:px-4">
           <h2 class="text-3xl">Our Top Projects 2023</h2>
           <button class="px-6 py-2 border border-slate-500 rounded-full">
             See All
           </button>
         </div>
 
-        <div class="flex gap-6 flex-wrap pl-20">
-          <div class="drop-shadow-lg">
+        <div class="flex gap-6 flex-wrap  bg-red-200 ">
+          <div class="flex flex-col gap-2  flex-1 min-w-72">
             <img
               src="./assets/house1.jpg"
               alt=""
-              class="w-80 h-96 object-cover rounded-sm"
+              class=" h-96 object-cover rounded-sm"
             />
             <h3>Darth Vader House</h3>
             <p class="tracking-tighter text-sm">854 Avacoda Ave, USA</p>
           </div>
-          <div>
+          <div class=" flex flex-col gap-2  flex-1 min-w-72">
             <img
               src="./assets/house1.jpg"
               alt=""
-              class="w-80 h-96 object-cover rounded-sm"
+              class=" h-96 object-cover rounded-sm"
             />
             <h3 class="">Birchwood House</h3>
             <p class="tracking-tighter text-sm">
               2F, 4035-1 Ikenobecho, Tsuzuki-ku, Yokohama
             </p>
           </div>
-          <div>
+          <div class=" flex flex-col gap-2  flex-1 min-w-72">
             <img
               src="./assets/house1.jpg"
               alt=""
-              class="w-80 h-96 object-cover rounded-sm"
+              class=" h-96 object-cover rounded-sm"
+            />
+            <h3>The Never-Ending Story</h3>
+            <p class="tracking-tighter text-sm">
+              8F, 5-24-2, Sendagaya, Shibuya-ku, USA
+            </p>
+          </div>
+          <div class=" flex flex-col gap-2  flex-1 min-w-72">
+            <img
+              src="./assets/house1.jpg"
+              alt=""
+              class=" h-96 object-cover rounded-sm"
             />
             <h3>The Never-Ending Story</h3>
             <p class="tracking-tighter text-sm">
@@ -282,7 +293,7 @@
 
       <!-- About -->
 
-      <section class="px-20 mt-32 flex gap-12 flex-wrap">
+      <section class="pl-[90px] pr-24 mt-32 flex gap-12 flex-wrap">
         <!-- left  -->
         <div class="flex flex-col gap-2  flex-1">
           <img
@@ -300,28 +311,28 @@
         </div>
 
         <!-- right -->
-        <div class="flex flex-col gap-4  ">
+        <div class="flex flex-col gap-5 flex-[2] bg-red-200 ">
           <h1 class="text-7xl">About Us</h1>
-          <h3 class="text-4xl max-w-[520px] leading-snug">
-            The potential of a property is as good as the person investing in
+          <h3 class="text-5xl  leading-snug text-justify tracking-tighter">
+            The potential of a property is   as good as  the person investing in
             it.
           </h3>
-          <p class="max-w-[710px]">
+          <p class=" text-md ">
             Your best investment opportunity won't fit into a safety deposit
             box, but you can live in it.<b
-              >Realtors are matchmakers that introduce people to homes until
-              they fall in love with one. Then they're the wedding planner.</b
+              >Realtors <br> are matchmakers that introduce people to homes until
+              they fall in love with one. Then they're <br> the wedding planner.</b
             >
           </p>
-          <p class="max-w-[710px]">
+          <p class="max-w-[710px] text-md">
             A house is made of bricks and beams. A home is made of hopes and
-            dreams. We'll help you find your home. If you have the opportunity
-            to suggest a real estate agent to anyone, think of me. It's 6:30am -
+            dreams. We'll help you find <br> your home. If you have the opportunity
+            to suggest a real estate agent to anyone, think of me. It's <br> 6:30am -
             do you know where your next home is going to be?
           </p>
 
           <!-- milestone -->
-          <div class="flex justify-between">
+          <div class="flex justify-between mt-4">
             <div>
               <h1 class="text-3xl">500+</h1>
               <p class="max-w-20 leading-tight">Projects Completed</p>
@@ -346,6 +357,179 @@
 
         </div>
       </section>
+
+      <!-- search properties -->
+      <section>
+        <div class="pt-24 flex flex-col items-center gap-8">
+          <h1 class="text-3xl text-center">Invest in Your Dream Home: Buy the Best <br> Property Today! </h1>
+
+           <div
+            class="flex gap-4 items-center mb-6 bg-slate-200 w-fit rounded-full relative flex-wrap"
+          >
+            <!-- search  -->
+            <div class="relative rounded-full">
+              <span
+                class="material-symbols-outlined absolute left-4 z-10 top-3"
+              >
+                search
+              </span>
+              <input
+                type="text"
+                placeholder="Search properties"
+                class="rounded-full py-3 z-0 pl-12 bg-slate-200 focus:outline-none"
+              />
+            </div>
+            <div class="w-[1px] h-12 bg-slate-300 absolute left-64"></div>
+            <!-- location -->
+            <div class="bg-slate-200 rounded-full py-3 px-4 relative">
+              <span class="material-symbols-outlined absolute left-2">
+                location_on
+              </span>
+              <select
+                name="location"
+                id="location"
+                class="bg-transparent pl-4 focus:outline-none"
+              >
+                <option selected="selected" class="hidden">Location</option>
+                <option value="india">India</option>
+                <option value="australia">Australia</option>
+                <option value="germany">Germany</option>
+              </select>
+            </div>
+            <div class="w-[1px] h-12 bg-slate-300 absolute left-[390px]"></div>
+            <!-- pricing -->
+            <div class="bg-slate-200 rounded-full py-3 px-4">
+              <span class="material-symbols-outlined absolute right-[270px]">
+                shoppingmode
+              </span>
+              <select
+                name="pricing"
+                id="pricing"
+                class="bg-transparent focus:outline-none pl-2"
+              >
+                <option class="hidden">Pricing</option>
+                <option value="100">$100</option>
+                <option value="200">$200</option>
+                <option value="300">$300</option>
+              </select>
+            </div>
+            <!-- search button -->
+            <button class="bg-slate-800 text-slate-50 px-14 py-4 rounded-full">
+              Search
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- property listing -->
+      <section class="flex  gap-4 flex-wrap px-20">
+        <div class="flex flex-col gap-2  flex-1">
+          <img src="./assets/house1.jpg"  alt="" class="">
+          <h1 class="text-3xl">$235,890</h1>
+          <p class="text-xs tracking-tighter">Buying a bigger home doesnt necessarily mean  spending more money.</p>
+          <h1 class="text-sm tracking-tighter">4800 WHITESBURG DRIVE, SUITE 102, USA</h1>
+          <div class="flex  gap-1 ">
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">2</span>
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">1</span>
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">1600 SFT</span>
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">... More</span>
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">2</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 flex-1">
+          <img src="./assets/house1.jpg"  alt="" class="">
+          <h1 class="text-3xl"><span class="line-through text-2xl pr-4">$325,234</span>$235,890</h1>
+          <p class="text-xs tracking-tighter">Buying a bigger home doesnt necessarily mean  spending more money.</p>
+          <h1 class="text-sm tracking-tighter">4800 WHITESBURG DRIVE, SUITE 102, USA</h1>
+            <div class="flex  gap-1 ">
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">2</span>
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">1</span>
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">1600 SFT</span>
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">... More</span>
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">2</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 flex-1">
+          <img src="./assets/house1.jpg"  alt="" class="">
+          <h1 class="text-3xl">$235,890</h1>
+          <p class="text-xs tracking-tighter">Buying a bigger home doesnt necessarily mean  spending more money.</p>
+          <h1 class="text-sm tracking-tighter">4800 WHITESBURG DRIVE, SUITE 102, USA</h1>
+          <div class="flex  gap-1 ">
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">2</span>
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">1</span>
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">1600 SFT</span>
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">... More</span>
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">2</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2  flex-1">
+          <img src="./assets/house1.jpg"  alt="" class="">
+          <h1 class="text-3xl">$235,890</h1>
+          <p class="text-xs tracking-tighter">Buying a bigger home doesnt necessarily mean  spending more money.</p>
+          <h1 class="text-sm tracking-tighter">4800 WHITESBURG DRIVE, SUITE 102, USA</h1>
+          <div class="flex  gap-1 ">
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">2</span>
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">1</span>
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">1600 SFT</span>
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">... More</span>
+            <span class="text-xs w-16 text-center h-5  bg-slate-200 rounded-full">2</span>
+          </div>
+        </div>
+
+      </section>
+      <!-- more -->
+      <div class="flex justify-center pt-4 ">
+        <p class="px-4 py-2 rounded-full text-xs  bg-slate-200">... 22 More</p>
+      </div>
+      
+      <!-- contact us -->
+      <section>
+        <div class="bg-slate-800 flex flex-col items-center gap-14 pt-20 mt-6 pb-20">
+          <h1 class="text-5xl text-slate-100 text-center">Making Real Estate Simple, Seamless,<br>and Rewarding</h1>
+          <button class="px-6 py-2 bg-slate-100 rounded-full text-lg tracking-wider">Contact us</button>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <section class="mt-10">
+        <hr class="bg-slate-300 w-full h-[2px]">
+        <div class="flex flex-col items-center gap-6 mt-10">
+
+        <div class="flex items-center gap-3 max-[870px]:flex-1 ">
+          <img src="assets/logo.png" alt="logo" />
+          <h5 class="text-2xl font-bold">SAJIBUR</h5>
+        </div>
+
+         <div class="flex gap-3 items-center ">
+            <img src="./assets/social media/linkedin.png" alt="" class="w-[26px] " />
+            <img src="./assets/social media/instagram.png" alt="" class="w-7" />
+            <img src="./assets/social media/facebook.png" alt="" class="w-6 h-6 object-contain" />
+            <img src="./assets/social media/twitter.png" alt="" class="w-7" />
+          </div>
+
+          <div class="flex items-center text-slate-500  gap-14 pt-5">
+          <a href="#" class="hover:text-slate-900 tracking-tighter">Home</a>
+          <a href="#" class="hover:text-slate-900 tracking-tighter">About</a>
+          <a href="#" class="hover:text-slate-900 tracking-tighter">Property</a>
+          <a href="#" class="hover:text-slate-900 tracking-tighter">Projects</a >
+          <a href="#" class="hover:text-slate-900 tracking-tighter">Pricing</a >
+          <a href="#" class="hover:text-slate-900 tracking-tighter">Contact</a>
+          </div>
+
+          <div class=" w-full px-20">
+            <hr class="bg-slate-200  h-[2px] ">
+          </div>
+
+          <div class="flex justify-between w-full px-20">
+            <p class="text-xs">SAJIBUR International Ltd.2023</p>
+            <p class="text-xs">Terms and Conditions</p>
+          </div>
+
+        </div>
+        </div>
+      </section>
+
     </section>
   </body>
 </html>
